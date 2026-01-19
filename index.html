@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave Podcast</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"],
+          },
+          colors: {
+            bg0: "#0a0520",
+          },
+          boxShadow: {
+            glow: "0 0 0 1px rgba(255,255,255,0.06), 0 16px 60px rgba(0,0,0,0.45)",
+          },
+        },
+      },
+    };
+  </script>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-bg0 text-white font-sans selection:bg-fuchsia-500/30">
+    <div class="fixed inset-0 -z-50 bg-[radial-gradient(ellipse_at_top,_rgba(180,0,255,0.18)_0%,_rgba(10,5,32,0)_55%),radial-gradient(ellipse_at_bottom,_rgba(0,255,150,0.12)_0%,_rgba(10,5,32,0)_55%)]"></div>
+  <div class="fixed inset-0 -z-40 opacity-30 mix-blend-overlay pointer-events-none bg-[url('assets/noise.png')] bg-repeat" aria-hidden="true"></div>
+
+ 
+  <header class="sticky top-0 z-50">
+    <div class="nav-blur border-b border-white/5">
+      <div class="relative mx-auto max-w-6xl px-5 py-4 flex items-center justify-between">
+    
+        <a href="#" class="flex items-center gap-2">
+          <span class="text-4xl font-extrabold tracking-wide">
+            Tech<span class="text-fuchsia-400">Wave</span>
+          </span>
+        </a>
+
+      
+        <nav class="hidden md:flex items-center gap-8 text-2xl text-white/80 absolute left-1/2 -translate-x-1/2">
+          <a class="hover:text-white transition" href="#about">About</a>
+          <a class="hover:text-white transition" href="#episodes">Episodes</a>
+          <a class="hover:text-white transition" href="#host">Host</a>
+        </nav>
+
+       
+        <div class="flex items-center gap-3">
+          <a href="#" class="hidden sm:inline-flex btn-pill btn-gradient px-5 py-2 text-xl font-semibold">
+            Subscribe
+          </a>
+
+          
+          <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer p-2 rounded-xl hover:bg-white/5 transition">
+              <img class="h-5 w-5" src="assets/hamburger-menu.png" alt="Menu" />
+            </summary>
+
+            <div class="mobile-panel mt-3 rounded-2xl border border-white/10 bg-[rgba(18,8,40,0.92)] shadow-glow p-4 w-[220px] absolute right-0">
+              <div class="flex flex-col gap-2 text-white/80 text-sm">
+                <a class="py-2 hover:text-white" href="#about">About</a>
+                <a class="py-2 hover:text-white" href="#episodes">Episodes</a>
+                <a class="py-2 hover:text-white" href="#host">Host</a>
+                <a class="mt-2 inline-flex justify-center btn-pill btn-gradient px-4 py-2 text-sm font-semibold" href="#">
+                  Subscribe →
+                </a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <section class="hero-wrap">
+  <div class="hero-inner">
+    <div class="hero-row">
+
+      
+      <img src="assets/wave.png" class="hero-wave hero-wave-left" alt="" />
+
+     
+      <div class="hero-center">
+        <img src="assets/hero-circle.png" class="hero-circle" alt="" />
+
+        <img src="assets/microphone.png" class="hero-mic" alt="" />
+
+        <span class="hero-badge">NEW</span>
+      </div>
+
+     
+      <img src="assets/wave.png" class="hero-wave hero-wave-right" alt="" />
+
+    </div>
+
+    <h1 class="hero-title">TechWave</h1>
+    <p class="hero-subtitle">
+      Your daily dose of tech insights, productivity hacks, and personal growth
+    </p>
+
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary">
+        <img src="assets/spotify.png" alt="" />
+        Listen on Spotify
+      </a>
+
+      <a href="#" class="btn btn-outline">
+        <img src="assets/message.png" alt="" />
+        Subscribe
+      </a>
+    </div>
+  </div>
+
+
+  <div class="hero-fade"></div>
+</section>
+
+
+
+</body>
+</html>
