@@ -178,6 +178,55 @@ html, body { height: 100%; }
   box-shadow: 0 26px 70px rgba(0,0,0,0.35);
 }
 
+.episode-card2{
+  border-radius: 25px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(60, 25, 110, 0.55) 0%, rgba(25, 10, 55, 0.85) 100%);
+  border: 5px solid rgba(255,255,255,0.06);
+  
+}
+
+.episode-thumb2{
+  position: relative;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+}
+.episode-thumb2::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.45) 100%);
+}
+
+.ep-clock{
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #2eff9a;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(46,255,154,0.12);
+}
+.ep-clock::after{
+  content:"";
+  position:absolute;
+  left: 6px;
+  top: 3px;
+  width: 2px;
+  height: 6px;
+  background: rgba(0,0,0,0.45);
+  border-radius: 2px;
+}
+.ep-clock::before{
+  content:"";
+  position:absolute;
+  left: 6px;
+  top: 6px;
+  width: 5px;
+  height: 2px;
+  background: rgba(0,0,0,0.45);
+  border-radius: 2px;
+}
 
 /* responsive */
 @media (max-width: 768px){
